@@ -1,0 +1,86 @@
+{%extends "admin_layout.html"%}
+{%block content%}
+  <div class="container-fluid">
+
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{url_for('doctors.admin')}}">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Appointments</li>
+          </ol>
+          {%with messages= get_flashed_messages(with_categories=true)%}
+        {%if messages%}
+        {%for category,message in messages%}
+        <div class="alert alert-{{category}} alert-dismissible fade show",role="alert">
+          {{message}}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span
+          </button>
+        </div>
+        {%endfor%}
+        {%endif%}
+        {%endwith%}
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Pending Appointments</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Id</th>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Doctor</th>
+                      <th>Complete</th>
+                      <th>Department</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Id</th>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Doctor</th>
+                      <th>Complete</th>
+                      <th>Department</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    {%for appointment in appointments%}
+                      <tr>
+                        <td>{{appointment.id}}</td>
+                      <td>{{appointment.date_of_booking.strftime('%Y-%m-%d')}}</td>
+                      <td>{{appointment.fullname}}</td>
+                      <td>+254{{appointment.phone}}</td>
+                      <td>{{appointment.email}}</td>
+                      <td>{{appointment.doctor.fullname}}</td>
+                      <td>
+                      {%if appointment.complete == "False"%}
+                        <span class="text-danger">Pending</span>
+                      {%else%}
+                        <span class="text-success">Complete</span>
+                      {%endif%}
+                      </td>
+                      <td>{{appointment.appointment_department}}</td>
+                    </tr>
+                    {%endfor%}
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated at {{now.strftime('%X %p')}}</div>
+          </div>
+
+        </div>
+
+    </div>
+{%endblock content%}

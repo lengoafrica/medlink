@@ -1,0 +1,330 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Circular', sans-serif;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: dodgerblue;
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+a {
+  color: dodgerblue;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+/*li a.nav-link{
+  position: relative !important;
+}
+li a.nav-link::after{
+  content: "";
+  height:3px;
+  width:100px;
+  position: absolute;
+}*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Circular', sans-serif;
+}
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;/*
+  display: none;*/
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+
+.bg-primary {
+  background-color: dodgerblue !important;
+}
+
+.bg-dark {
+  background-color: dodgerblue !important;
+}
+.text-title{
+  color:dodgerblue;
+}
+.text-faded {
+  color: #fff;
+}
+.bg-footer{
+  background-color: #212529;
+}
+.btn-light:hover{
+  color:dodgerblue;
+  background-color: #fff;
+}
+.btn-modal{
+  color:dodgerblue;
+  font-weight: 100;
+  font-size: 0.9em;
+  border: 1px solid dodgerblue !important;
+  background-color: #fff;
+}
+.btn-modal:hover{
+color:#fff;
+  font-weight: 100;
+  font-size: 0.9em;
+  background-color: dodgerblue;
+}
+.modal-dialog{
+  box-shadow: 0 0 5px 1px #111;
+  border: none !important;
+}
+iframe{
+  width:100%;
+  height: 100%;
+  background-color: dodgerblue;
+}
+section {
+  padding: 8rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+
+
+#mainNav {
+  border-bottom: 1px solid dodgerblue;
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: dodgerblue;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: dodgerblue;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+}
+.btn-link{
+  font-size: .9rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #212529 !important;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: dodgerblue;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: dodgerblue !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: dodgerblue;
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: dodgerblue;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: dodgerblue;
+  }
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.book{
+    background-image: url("../img/book.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.book-login{
+    background-image: url("../img/doctor.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+header.masthead p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+.service-box {
+  max-width: 400px;
+}
+
+.text-primary {
+  color: dodgerblue !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: dodgerblue;
+  border-color: dodgerblue;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: dodgerblue;
+  background-color: #fff !important;
+  box-shadow:0 0 5px 1px dodgerblue;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem dodgerblue !important;
+}
+@media screen and (max-width: 768px) {
+  .book {
+    display: none;
+  }
+  .book-form{
+    margin-top: 20px;
+    width: 96% !important;
+    border: 1px solid dodgerblue;
+    padding: 10px 12px;
+    border-radius: 4px;
+  }
+}
+
+
+

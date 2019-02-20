@@ -1,0 +1,71 @@
+{%extends "admin_layout.html"%}
+{%block content%}
+  <div class="container-fluid">
+
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{url_for('doctors.admin')}}">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Clients</li>
+          </ol>
+
+           <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Appointments</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Id</th>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Assign</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Id</th>
+                      <th>Date</th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Assign</th>
+                      <th>Description</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    {%for appointment in appointments%}
+                      <tr>
+                        <td>{{appointment.id}}</td>
+                      <td>{{appointment.date_of_booking.strftime('%Y-%m-%d')}}</td>
+                      <td>{{appointment.fullname}}</td>
+                      <td>+254{{appointment.phone}}</td>
+                      <td>{{appointment.email}}</td>
+                      <td>
+
+                        {%if appointment.assigned == "False"%}
+                          <a href="{{url_for('doctors.assign', appointment_id=appointment.id)}}"  class="btn btn-success">Assign</a>
+                          {%else%}
+                          {{appointment.doctor.fullname}}
+                        {%endif%}
+                      </td>
+                      <td>{{appointment.description}}</td>
+                    </tr>
+                    {%endfor%}
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
+{%endblock content%}

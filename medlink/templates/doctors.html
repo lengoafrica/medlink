@@ -1,0 +1,79 @@
+{%extends "admin_layout.html"%}
+{%block content%}
+  <div class="container-fluid">
+
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{url_for('doctors.admin')}}">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Doctors</li>
+          </ol>
+            {%with messages= get_flashed_messages(with_categories=true)%}
+        {%if messages%}
+        {%for category,message in messages%}
+        <div class="alert alert-{{category}} alert-dismissible fade show",role="alert">
+          {{message}}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span
+          </button>
+        </div>
+        {%endfor%}
+        {%endif%}
+        {%endwith%}
+           <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Doctors</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Id</th>
+                      <th>Department</th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Status</th>
+                      <th>Pdf</th>
+                      <th>Remove</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Id</th>
+                      <th>Department</th>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Status</th>
+                      <th>Pdf</th>
+                      <th>Remove</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    {%for doctor in doctors%}
+                      <tr>
+                        <td>{{doctor.id}}</td>
+                        <td>{{doctor.department}}</td>
+                      <td>{{doctor.fullname}}</td>
+                      <td>+254{{doctor.phone}}</td>
+                      <td>{{doctor.email}}</td>
+                      <td>{{doctor.status}}</td>
+                      <td><a href="{{url_for('doctors.print_pdf', doctor_id=doctor.id)}}" class="btn btn-info mr-0">Print</a></td>
+                      <td><a href="{{url_for('doctors.delete', doc_id=doctor.id)}}" class="btn btn-danger mr-0">Remove</a></td>
+
+                    </tr>
+                    {%endfor%}
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
+{%endblock content%}

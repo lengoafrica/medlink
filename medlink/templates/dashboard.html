@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>St.Francis Hospital Kahawa Sukari</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Bootstrap CSS File -->
+  <link href="{{url_for('static',filename='site/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{url_for('static',filename='site/nivo-slider/css/nivo-slider.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/owlcarousel/owl.carousel.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/owlcarousel/owl.transitions.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/nivo-slider-theme.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div id="preloader"></div>
+
+  <header>
+    <div class="header-area stick">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                <a class="navbar-brand page-scroll sticky-logo" href="{{url_for('doctors.home')}}">
+                  <h1 class="brand"><span>ST</span>.FRANCIS HOSPITAL</h1>
+                                </a>
+              </div>
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a class="" href="{{url_for('doctors.home')}}">Home</a>
+                  </li>
+                  <li class="active">
+                    <a class="" href="{{url_for('doctors.about')}}">About</a>
+                  </li>
+                  <li>
+                    <a class="" href="{{url_for('doctors.home')}}">Services</a>
+                  </li>
+                  <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Departments<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=# >Optical Department</a></li>
+                      <li><a href=# >In-patient Department</a></li>
+                      <li><a href=# >Out-patient Department</a></li>
+                    </ul>
+                  </li> -->
+
+                  <li>
+                    <a class="page-scroll" href="{{url_for('appointments.book')}}">Book Appointment</a>
+                  </li>
+                  <li>
+                    <a class="" href="{{url_for('doctors.home')}}">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div  class="services-area area-padding pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline services-head text-center">
+            <h2>Appointment Booked!</h2>
+          </div>
+          <div class="jumbotron">
+            <h5>You have successfully booked an appointment. Our technical team will be working on your request an we will get back to you as soon as possible.</h5>
+            <p class="pt-4">Thank you!</p>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+
+
+  <!-- JavaScript Libraries -->
+  <script src="{{url_for('static',filename='site/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/bootstrap/js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/venobox/venobox.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/knob/jquery.knob.js')}}"></script>
+  <script src="{{url_for('static',filename='site/wow/wow.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/parallax/parallax.js')}}"></script>
+  <script src="{{url_for('static',filename='site/easing/easing.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/nivo-slider/js/jquery.nivo.slider.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename='site/appear/jquery.appear.js')}}"></script>
+  <script src="{{url_for('static',filename='site/isotope/isotope.pkgd.min.js')}}"></script>
+
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>

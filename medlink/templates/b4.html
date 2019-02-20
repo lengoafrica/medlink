@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>St.Francis Hospital Kahawa Sukari</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Bootstrap CSS File -->
+  <link href="{{url_for('static',filename='site/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{url_for('static',filename='site/nivo-slider/css/nivo-slider.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/owlcarousel/owl.carousel.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/owlcarousel/owl.transitions.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/animate/animate.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='site/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/nivo-slider-theme.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div id="preloader"></div>
+
+  <header>
+    <div class="header-area stick">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                <a class="navbar-brand page-scroll sticky-logo" href="{{url_for('doctors.home')}}">
+                  <h1 class="brand"><span>ST</span>.FRANCIS HOSPITAL</h1>
+                                </a>
+              </div>
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a class="" href="{{url_for('doctors.home')}}">Home</a>
+                  </li>
+                  <li>
+                    <a class="" href="{{url_for('doctors.home')}}">Services</a>
+                  </li>
+                  <li class="active">
+                    <a class="" href="{{url_for('doctors.about')}}">About</a>
+                  </li>
+
+
+                  <li>
+                    <a class="page-scroll" href="{{url_for('appointments.book')}}">Book Appointment</a>
+                  </li>
+                  <li>
+                    <a class="" href="{{url_for('doctors.home')}}">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div  class="services-area area-padding pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline services-head text-center">
+            <h2>About Us</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="services-contents">
+          <!-- Start Left services -->
+          <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                                            <i class="fa fa-fire"></i>
+                                        </a>
+                  <h4>Mission</h4>
+                  <p class="w-2">
+                    Partnership in health care delivery where client is the integral part and in conjunction with the medical team must keep effective communication.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                  <h4>vision</h4>
+                  <p class="w-2">
+                    Medical care practice where client is totally made aware of that they are important participants as the medical team cannot acheive much alone to make a healthy community.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                                            <i class="fa fa-key"></i>
+                                        </a>
+                  <h4>Motto</h4>
+                  <p class="w-2">
+                    Our mission is your health!
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <footer>
+    <div class="footer-area bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2>St francis hospital</h2>
+                </div>
+
+                <p>You can reach us through the social media Links below and you will be reached out by out technical team</p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Official Contacts</h4>
+                <p>
+                  Help us improve our services by giving back your feedback through contacts below.
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel:</span> +2547 23 847 759 </p>
+                  <p><span>Email:</span> stfrancishealthsvsksukari@gmail.com</p>
+                  <p><span>Working Hours:</span> All Week (24hrs)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Location</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9557679307727!2d36.9295620149585!3d-1.1914110991309774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fa285d05729%3A0x887cd077c3ff80c2!2sSt.+Francis+Health+Services!5e0!3m2!1sen!2ske!4v1549375631199" width="100%" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <span class="copyright"></span> <strong>St francis hospital kahawa sukari</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{{url_for('static',filename='site/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/bootstrap/js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/owlcarousel/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/venobox/venobox.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/knob/jquery.knob.js')}}"></script>
+  <script src="{{url_for('static',filename='site/wow/wow.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/parallax/parallax.js')}}"></script>
+  <script src="{{url_for('static',filename='site/easing/easing.min.js')}}"></script>
+  <script src="{{url_for('static',filename='site/nivo-slider/js/jquery.nivo.slider.js')}}" type="text/javascript"></script>
+  <script src="{{url_for('static',filename='site/appear/jquery.appear.js')}}"></script>
+  <script src="{{url_for('static',filename='site/isotope/isotope.pkgd.min.js')}}"></script>
+
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>
