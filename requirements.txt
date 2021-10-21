@@ -1,7 +1,7 @@
 alembic==1.0.5
 anaconda==0.0.1.1
 asn1crypto==0.24.0
-Babel==2.6.0
+Babel==2.9.1
 bcrypt==3.1.5
 blinker==1.4
 cairocffi==0.9.0
